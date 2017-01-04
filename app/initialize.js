@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		})
 		idDays.addEventListener("change",()=>{
 			jours = document.getElementById("userInputDays").value
-			
+
 			console.log("changement jours")
 		})
 		idYears.addEventListener("change",()=>{
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		idMois.addEventListener("change",()=>{
 			console.log("changement mois")
 			mois = document.getElementById('selectMois').value
-			
+
 		})
 		idReset.addEventListener("click",()=>{
 			restart()
@@ -75,11 +75,18 @@ document.addEventListener('DOMContentLoaded', () => {
 		document.getElementById("userInputDays").value = ""
 
 	}
+	let condition = ()=>{
+		
+	}
 
 
 	let conditionDays = ()=>{
+		document.getElementById("userInputDays").style.border = "2px solid #ff7473" 
+		document.getElementById("main").style.display = show 
+		document.getElementById("overlay").style.display = hide
+		document.getElementById("msgOverlay").innerHTML = ""
 
-		
+
 
 	}
 	let conditionYears = ()=>{
