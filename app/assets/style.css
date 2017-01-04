@@ -1,0 +1,81 @@
+body{
+	background-color:#34314c;
+	color: #47b8e0;
+	margin: 0;
+	padding: 0;
+}
+
+.main{
+	margin-top: 3%;
+	text-align: center;
+}
+
+.userInputDays{
+	width: 12%;
+	background-color:#34314c;
+	border:2px solid #47b8e0 ;
+	color:#47b8e0;
+	
+	
+	
+
+}
+.selectMois{
+	background-color:#34314c;
+	border-style: solid;
+	border:2px solid #47b8e0 ;
+	color:#47b8e0;
+}
+.userInputYears{
+	background-color:#34314c;
+	border:2px solid #47b8e0 ;
+	width: 12%;
+	color:#47b8e0;
+}
+#btCheck{
+	background-color:#34314c;
+	border:2px solid #47b8e0 ;
+	color:#47b8e0;
+	margin-top: 1%;
+	height: 20%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-right: 1%;
+	padding-left: 1%;
+}
+
+.overlay{
+	font-size: 100pt;
+	text-align: center;
+	justify-content: center;
+	
+	background-color: #9055A2;
+	height: 100vh;
+	width: 100%;
+	color: #D499B9;
+}
+
+.error{
+	padding-top: 10pt;
+	background-color: #ff7473;
+	font-size: 15pt;
+	height: 5vh;
+	color :#fff;
+}
+
+#btCheck:hover{
+	color: #fff;
+	background-color: #47b8e0;
+}
+
+#msg{
+	margin-bottom: 10pt;
+}
+
+#msgOverlay{
+	
+	display: flex;
+	justify-content: center;
+}
+
+s
