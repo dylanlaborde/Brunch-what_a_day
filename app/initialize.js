@@ -110,11 +110,14 @@ document.addEventListener('DOMContentLoaded', () => {
 		if (jours === undefined && an === undefined) {
 			conditionUndefined()
 		}
-		else if (date === "Invalid date") {
-			// coonditionInvalide()
-		}
 		else if (jours > 31) {
 			 conditionWrong()
+		}
+		else if (jours === "") {
+			conditionDays()
+		}
+		else if (an === "") {
+			conditionYears()
 		}
 		else {
 			check()
@@ -144,26 +147,26 @@ document.addEventListener('DOMContentLoaded', () => {
 		document.getElementById("overlay").style.display = hide
 	}
 	
-	// let conditionDays = ()=>{
-	// 	document.getElementById("userInputDays").style.border = "2px solid #ff7473" 
-	// 	document.getElementById("main").style.display = show 
-	// 	document.getElementById("overlay").style.display = hide
-	// 	document.getElementById("msgOverlay").innerHTML = ""
+	let conditionDays = ()=>{
+		document.getElementById("userInputDays").style.border = "2px solid #ff7473" 
+		document.getElementById("main").style.display = show 
+		document.getElementById("overlay").style.display = hide
+		document.getElementById("msgOverlay").innerHTML = ""
 
 
 
-	// }
-	// let conditionYears = ()=>{
-	// 	document.getElementById("userInputYears").style.border = "2px solid #ff7473" 
-	// 	document.getElementById("main").style.display = show 
-	// 	document.getElementById("overlay").style.display = hide
-	// 	document.getElementById("msgOverlay").innerHTML = ""
-	// 	document.getElementById("msg").innerHTML = ""
-	// 	document.getElementById("message").style.display = show 
-	// 	document.getElementById("msg").innerHTML = "Renseigner l'année !"
+	}
+	let conditionYears = ()=>{
+		document.getElementById("userInputYears").style.border = "2px solid #ff7473" 
+		document.getElementById("main").style.display = show 
+		document.getElementById("overlay").style.display = hide
+		document.getElementById("msgOverlay").innerHTML = ""
+		document.getElementById("msg").innerHTML = ""
+		document.getElementById("message").style.display = show 
+		document.getElementById("msg").innerHTML = "Renseigner l'année !"
 
 		
-	// }
+	}
 	
 	remove()
 	watcher()
